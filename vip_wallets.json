@@ -1,40 +1,5 @@
 [
   {
-    "id": 11296,
-    "address": "0x26e422985137ee9abc76c5b931510fe3ddddfa43",
-    "private_key": "0xed86a0289c69e6671e11c2adac27afa1ce9186865c463e0b50fab355b3645d06",
-    "username": "oslo_daniel728",
-    "tier": "leaf"
-  },
-  {
-    "id": 11297,
-    "address": "0x1e6542224352bf7cacc9ec94380170d38b4864bc",
-    "private_key": "0x3676bf30642719a74933da47a779d0fc6a7fb045665fe4a64d5aa2b6e2a5ad38",
-    "username": "eagleethan272",
-    "tier": "leaf"
-  },
-  {
-    "id": 11298,
-    "address": "0xa6c2c672ffa9370dcea93786ffc1ea117eb0ace6",
-    "private_key": "0xc3be4a2a5ce70318c0dc2c5cfd32ae6373e92978a7862256d6a6b7cd938e6a80",
-    "username": "elizabeth_hawk93",
-    "tier": "leaf"
-  },
-  {
-    "id": 11299,
-    "address": "0xf97118af0571ed9e12bf6a396180c4c38a4051c5",
-    "private_key": "0xc4af8af2b99ebe1474a61f6e0052acdf5f68b0e07e8b31192326e2dfc4d82c7d",
-    "username": "lucas_york532",
-    "tier": "leaf"
-  },
-  {
-    "id": 11300,
-    "address": "0xf3e7add585c32d6c343d17b023765c49393aa3c4",
-    "private_key": "0x442f3ce019dd1573d27766d8eb19ae871804f4133bc1429a2b41e6e1ba745a51",
-    "username": "emma_fern846",
-    "tier": "leaf"
-  },
-  {
     "id": 11301,
     "address": "0xe564b800c091bc653fe4b6421d884b8e89841a06",
     "private_key": "0x7df5db7c8ed36f320e2a1a7a096481bc27e0e2dc956c6dbf80b90eb86822ba02",
@@ -1397,6 +1362,41 @@
     "address": "0x95005ee634b37b35c321c0cb535c788bac5336fe",
     "private_key": "0x0b07d830320a74f260df8cc51fae008755d45400d9eddb2834ea971c8e79317d",
     "username": "madisonhaven583",
+    "tier": "leaf"
+  },
+  {
+    "id": 11694,
+    "address": "0xf34460e982f117785a4b834e90b3c35b8e1a789e",
+    "private_key": "0xf5d5be22ea985f51df21386603e7b6bee745f9c9b7b46ee1ff131c291c76454b",
+    "username": "rogerfudge665",
+    "tier": "leaf"
+  },
+  {
+    "id": 11701,
+    "address": "0xd52c17a4bcbb9b085ec01303dac04181ffc38aad",
+    "private_key": "0x6856d33ef560b7c0bd94a475f2c4bb2f740a43de8650b8b8ff22a86d33fef9c7",
+    "username": "penelopebeacon5",
+    "tier": "leaf"
+  },
+  {
+    "id": 11702,
+    "address": "0xd8c5acd26dea5101948ca3948039e4b5d571552f",
+    "private_key": "0x45010651134e5e4e655f5d6e4bfdab6d733fecce51a0b3605e6516b4fe906575",
+    "username": "matteoprism944",
+    "tier": "leaf"
+  },
+  {
+    "id": 11705,
+    "address": "0xbd729348991c67c1f4b658648f68a8cbc9c6a978",
+    "private_key": "0x95246a6b2c530cecae249ee8a7aa33bf463bd23645557e598d5d0a04d61ef415",
+    "username": "george_butter1997",
+    "tier": "leaf"
+  },
+  {
+    "id": 11706,
+    "address": "0x7dd082038c23d17eb67e57a5c7c15250ce0d735b",
+    "private_key": "0x5081d3637a4be65070411a0374848c87685d380b9c43eec6cbf93c1b5b2a63d4",
+    "username": "adam_summit725",
     "tier": "leaf"
   }
 ]

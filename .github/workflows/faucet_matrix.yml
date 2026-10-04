@@ -1,0 +1,49 @@
+name: Titan Canton Faucet Matrix
+
+on:
+  workflow_dispatch:
+
+jobs:
+  faucet-worker:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        batch_id: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Tor SOCKS5 Daemon
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tor
+          echo "SocksPort 9050 IsolateSOCKSAuth" | sudo tee -a /etc/tor/torrc
+          echo "ControlPort 9051" | sudo tee -a /etc/tor/torrc
+          echo "CookieAuthentication 0" | sudo tee -a /etc/tor/torrc
+          echo "MaxCircuitDirtiness 10" | sudo tee -a /etc/tor/torrc
+          echo "NumEntryGuards 8" | sudo tee -a /etc/tor/torrc
+          sudo systemctl restart tor
+          sleep 2
+
+      - name: Install Python Dependencies
+        run: |
+          pip install -q curl_cffi eth_account cryptography
+
+      - name: Execute Faucet & Trade Claims
+        run: |
+          python3 github_faucet_runner.py --batch-id ${{ matrix.batch_id }} --file vip_wallets.json
+
+      - name: Upload Batch Result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-result-${{ matrix.batch_id }}
+          path: result_batch_${{ matrix.batch_id }}.json
+          retention-days: 1
